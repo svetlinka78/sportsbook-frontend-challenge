@@ -54,18 +54,16 @@ You'll build a Javascript (Typescript?) solution. And we value great code. Good,
 
 ## The Application
 
-You'll write a extremely simple sports grid application. On the left side, a menu made by Sports and Matches. Each Match is a button to display its details on the center column of the screen. On the details, the user will have three different options to make place a bet. The user select one of the three buttons, the result is shown on the right column, as a shopping cart. For each option, the user can choose an amount of money he wants to place as a bet. In the end, there will be a button to confirm the bet, with the total amount.
+You'll write a extremely simple sports grid application. On the left side, a menu made by Sports and Matches. Each Match is a button to display its details on the center column of the screen. On the details, the user will have three different options to make place a bet. The user select one of the three buttons, the result is shown on the right column, as a shopping cart. Than, for that, the user can choose an amount of money he wants to place as a bet. On top of the bet value, there will be a multiplier percentage number, that is the possible profit for that bet. In the end, there will be a button to submit the form, confirming the bet, with the total amount.
 
 The rules for the submission is:
 
-- The total amount of the bets can not be less than 100,00 USD.
-- The total amount of the bets can't be greater than 1.000,00 USD.
-- The minimum bet for each type of bet can't be less than 20,00 USD.
-- The maximum bet for each type of bet can't be greater than 200,00 USD.
+- The total amount of the bet can not be less than 100,00 USD.
+- The total amount of the bet can't be greater than 1.000,00 USD.
 
 After the bet being placed and successfully sent to the server, a notification/toast should be shown to the user and the bet items should be cleared of the right column.
 
-Please, [head to the mockups](https://www.figma.com/file/bSdenS7ehnGaa10FQyK5Cg/VL-FE-Challenge), so you can better understand what we're asking you to build.
+Please, [head to the mockups](https://www.figma.com/file/bSdenS7ehnGaa10FQyK5Cg/VL-FE-Challenge?node-id=19%3A139), so you can better understand what we're asking you to build.
 
 ### What about the API?
 
@@ -80,5 +78,7 @@ The API is up to you. You can use any library (like [MirageJS](https://miragejs.
 ## Final Notes
 
 If you want, you can add a "SOLUTION.md" file, to add notes to your solution. Instructions on how to build and run your solution are very welcomed.
+
+Optional: any other information you want to share/consider is also welcomed. Feel free to highlight the strong points of your code or maybe improvements you could do in case you had more time or if it were a real application. This is optional, don't spend too much time on it or don't do it at all.
 
 If you need help, please reach out! Talk to our team by mail or any other contact you may have. We're here to help and clarify your path. Just like we would in our real projects. Let's create some beautiful software together.
