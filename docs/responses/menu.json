@@ -1,0 +1,174 @@
+[
+  {
+    "categories": [
+      {
+        "tournaments": [
+          {
+            "matchCount": 1,
+            "id": 7709,
+            "name": "MLB",
+            "slug": "mlb",
+            "guid": "",
+            "favorite": false,
+            "displayOrder": 0
+          }
+        ],
+        "matchCount": 1,
+        "id": 172,
+        "name": "USA",
+        "guid": "",
+        "slug": "usa",
+        "favorite": false,
+        "displayOrder": 0
+      }
+    ],
+    "matchCount": 1,
+    "id": 3,
+    "guid": "e9e761bd-37ae-4943-99ed-accd6784216c",
+    "name": "Baseball",
+    "slug": "baseball",
+    "favorite": false,
+    "displayOrder": 0,
+    "timerType": 0,
+    "showCurrentPeriod": false
+  },
+  {
+    "categories": [
+      {
+        "tournaments": [
+          {
+            "matchCount": 1,
+            "id": 7575,
+            "name": "NHL",
+            "slug": "nhl",
+            "guid": "",
+            "favorite": false,
+            "displayOrder": 0
+          }
+        ],
+        "matchCount": 1,
+        "id": 172,
+        "name": "USA",
+        "guid": "",
+        "slug": "usa",
+        "favorite": false,
+        "displayOrder": 0
+      },
+      {
+        "tournaments": [
+          {
+            "matchCount": 5,
+            "id": 24101,
+            "name": "WHL",
+            "slug": "whl",
+            "guid": "",
+            "favorite": false,
+            "displayOrder": 0
+          }
+        ],
+        "matchCount": 5,
+        "id": 173,
+        "name": "Canada",
+        "guid": "",
+        "slug": "canada",
+        "favorite": false,
+        "displayOrder": 0
+      }
+    ],
+    "matchCount": 6,
+    "id": 4,
+    "guid": "8052a0c6-4026-4431-af1f-5569434bdcb3",
+    "name": "Ice Hockey",
+    "slug": "ice-hockey",
+    "favorite": false,
+    "displayOrder": 0,
+    "timerType": 0,
+    "showCurrentPeriod": false
+  },
+  {
+    "categories": [
+      {
+        "tournaments": [
+          {
+            "matchCount": 11,
+            "id": 4048,
+            "name": "NBA",
+            "slug": "nba",
+            "guid": "",
+            "favorite": false,
+            "displayOrder": 0
+          }
+        ],
+        "matchCount": 11,
+        "id": 172,
+        "name": "USA",
+        "guid": "",
+        "slug": "usa",
+        "favorite": false,
+        "displayOrder": 0
+      }
+    ],
+    "matchCount": 11,
+    "id": 2,
+    "guid": "3788cc72-435f-431c-a5cd-1340999b634a",
+    "name": "Basketball",
+    "slug": "basketball",
+    "favorite": false,
+    "displayOrder": 3,
+    "timerType": 0,
+    "showCurrentPeriod": false
+  },
+  {
+    "categories": [
+      {
+        "tournaments": [
+          {
+            "matchCount": 1,
+            "id": 4824,
+            "name": "Cup",
+            "slug": "cup",
+            "guid": "",
+            "favorite": false,
+            "displayOrder": 0
+          }
+        ],
+        "matchCount": 1,
+        "id": 254,
+        "name": "Colombia",
+        "guid": "",
+        "slug": "colombia",
+        "favorite": false,
+        "displayOrder": 0
+      },
+      {
+        "tournaments": [
+          {
+            "matchCount": 1,
+            "id": 18416,
+            "name": "Copa Verde",
+            "slug": "copa-verde",
+            "guid": "",
+            "favorite": false,
+            "displayOrder": 0
+          }
+        ],
+        "matchCount": 1,
+        "id": 249,
+        "name": "Brazil",
+        "guid": "",
+        "slug": "brazil",
+        "favorite": false,
+        "displayOrder": 0
+      }
+    ],
+    "matchCount": 2,
+    "id": 207,
+    "guid": "d0695244-dac8-4edf-8bbb-a6193e44416e",
+    "name": "Football",
+    "slug": "football",
+    "favorite": false,
+    "displayOrder": 1,
+    "timerType": 0,
+    "showCurrentPeriod": false
+  }
+]
