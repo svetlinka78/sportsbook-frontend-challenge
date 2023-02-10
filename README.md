@@ -34,7 +34,7 @@ You will write a front-end application. The details of this application will be 
 
 ## The bonuses
 
-We're a gambling company. We LOVE bonuses. Our users love bonuses even more. So, here are your bonuses:
+We're a sports booking company. We LOVE bonuses. Our users love bonuses even more. So, here are your bonuses:
 
 - Bonus for excellent Typescript usage. If you know Typescript, we'll love to read and understand your types, interfaces, etc.
 - Bonus if you use an HTTP/Cache managed layer, like ReactQuery. But, if you're not familiar with it, you won't loose points. Use it if you're confident with these concepts.
@@ -54,7 +54,7 @@ You'll build a Javascript (Typescript?) solution. And we value great code. Good,
 
 ## The Application
 
-You'll write a extremely simple sports grid application. On the left side, a menu made by Sports and Matches. Each Match is a button to display its details on the center column of the screen. On the details, the user will have three different options to make place a bet. The user select one of the three buttons, the result is shown on the right column, as a shopping cart. Than, for that, the user can choose an amount of money he wants to place as a bet. On top of the bet value, there will be a multiplier percentage number, that is the possible profit for that bet. In the end, there will be a button to submit the form, confirming the bet, with the total amount.
+You'll write a extremely simple sports grid application. On the left side, a menu made by Sports and Matches. Each Match is a button to display its details on the center column of the screen. On the details, the user will have some different options to choose (Outcomes and its odds) to place a bet. The user select one of Outcome buttons, the result is shown on the right column. We call it 'Betslip', and you can think of it as a shopping cart. Than, for that, the user can choose an amount of money he wants to place as a bet. On top of the bet value, there will be the odds number, that multiply the money and results in the possible profit for that bet. In the end, there will be a button to submit the form, placing the bet, with the total amount.
 
 The rules for the submission is:
 
@@ -65,15 +65,50 @@ After the bet being placed and successfully sent to the server, a notification/t
 
 Please, [head to the mockups](https://www.figma.com/file/bSdenS7ehnGaa10FQyK5Cg/VL-FE-Challenge?node-id=19%3A139), so you can better understand what we're asking you to build.
 
-### What about the API?
+### What about the data and API?
 
-The API is up to you. You can use any library (like [MirageJS](https://miragejs.com/)) or [JSON Server](https://github.com/typicode/json-server) to mock or build the API. These are just suggestions, you can do it with any tool or way you feel comfortable. A simple ExpressJS can do the job. You decide. Just **make sure you have the HTTP requests in place** just like you would had on an real world API. A fully hard-coded data solution is not acceptable.
+The API is very simple. There are only 3 end points. Before we check them, you can also see the [types.d.ts](./docs/types.d.ts) file.
 
-### Bonuses on API:
+Let's check the end points:
 
-- The URLs respect REST principles/specs
-- The bet submitted should "fail" sometimes. What we suggest is: if the total amount of bet is even, the request is successfully answered (HTTP 200). If the total amount is odd, the API should answer with a failed response (HTTP 400 or something like that).
-  - When the API fails, what do you do? Do you show a toast? The data is cleared or kept after a failure in the right column? Why?
+#### 1: GET data for the menu
+
+As you could see in the mockups above, there is a Menu on the left side. This menu should be built using the first end-point:
+URL: `https://fe-challenge-seven.vercel.app/api/tournaments`
+
+The data returned has a list of Tournaments with Sport and Matches. Check the mockups and the Types file, so you can have a better idea.
+
+<img src="./docs/menu.png" width="250px" />
+
+#### 2: GET data for the chosen match
+
+When the user clicks in some button on the left menu, the details of the Match are shown on the center of the screen.
+For each Market, there are buttons with its Odds value and name. The odds value should show max 3 decimal places.
+
+<img src="./docs/match-market-odds.png" width="600px" />
+
+#### 3: POST user's bet to the API
+
+After the user click in some Odds button, the right column (a.k.a. Betslip) shows the Odds details and a form where the user should input a money value. Please validate the money as follow:
+
+- The value must be a number
+- The user can only insert integer numbers, so, no "cents" value.
+- The value must be:
+  - Greater or equal 10
+  - Less than 10.000
+- The value can not be "falsy" (empty, zero, undefined, null, etc)
+
+As shown in the image above, the value of the money is multiplied by the Odds value and the user can see how much money he/she can do in case he/she wins.
+
+<img src="./docs/betslip.png" width="600px" />
+
+The payload to be sent to the API is represented by the `Bet` interface in the [types file](./docs/types.d.ts).
+
+After you submit the payload: if the bet value of the `odd`, it will return 200 successful. If it is `even`, it will fail. If the API returned an error, it would be awesome if the user has some beautiful feedback on the screen. Maybe a toast? Maybe something better? You decide.
+
+## POSTMAN
+
+Remember we don't want to useless spend your time? So, as a gift from our team, here you'll find a [POSTMAN file](./docs/postman-collection.json) to import to your client. So you can request the API and check the payloads and responses even before start your code.
 
 ## Final Notes
 
