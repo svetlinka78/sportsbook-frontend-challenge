@@ -19,7 +19,8 @@ const apiReducer = (state, action) => {
         isLoading: false,
         error: null,
         //task: { ...state.task, taskList: [action.payload, ...state.task.taskList] }
-        task: [action.payload, ...state.task] 
+        //task: [action.payload, ...state.task] 
+        task: [action.payload, ...state.task]
       };
 
     case "get":

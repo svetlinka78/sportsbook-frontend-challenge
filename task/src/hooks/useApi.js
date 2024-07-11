@@ -17,7 +17,9 @@ const useApi = (initialParam) => {
         const result = await axios(axiosParams);
 
         if (!didCancel) {
-          dispatch({ type: axiosParams.method, payload: result.data, id: axiosParams.url.split("/").pop() });
+          dispatch({ type: axiosParams.method, payload: result.data, id: axiosParams.data.id});
+          //if  Id is in url
+            //id: axiosParams.url.split("/").pop() });
         }
       } catch (error) {
         if (!didCancel) {
